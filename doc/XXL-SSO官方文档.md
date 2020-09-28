@@ -1,9 +1,14 @@
 ## 《分布式单点登录框架XXL-SSO》
 
+[![Actions Status](https://github.com/xuxueli/xxl-sso/workflows/Java%20CI/badge.svg)](https://github.com/xuxueli/xxl-sso/actions)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.xuxueli/xxl-sso/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.xuxueli/xxl-sso/)
 [![GitHub release](https://img.shields.io/github/release/xuxueli/xxl-sso.svg)](https://github.com/xuxueli/xxl-sso/releases)
 [![License](https://img.shields.io/badge/license-GPLv3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0.html)
-[![donate](https://img.shields.io/badge/%24-donate-ff69b4.svg?style=flat-square)](http://www.xuxueli.com/page/donate.html)
+[![donate](https://img.shields.io/badge/%24-donate-ff69b4.svg?style=flat-square)](https://www.xuxueli.com/page/donate.html)
+
+[TOCM]
+
+[TOC]
 
 ## 一、简介
 
@@ -12,7 +17,7 @@ XXL-SSO 是一个分布式单点登录框架。只需要登录一次就可以访
 拥有"轻量级、分布式、跨域、Cookie+Token均支持、Web+APP均支持"等特性。现已开放源代码，开箱即用。
 
 ### 1.2 社区交流   
-- [社区交流](http://www.xuxueli.com/page/community.html)
+- [社区交流](https://www.xuxueli.com/page/community.html)
 
 ### 1.3 特性
 - 1、简洁：API直观简洁，可快速上手
@@ -50,7 +55,7 @@ XXL-SSO 是一个分布式单点登录框架。只需要登录一次就可以访
 
 #### 文档地址
 
-- [中文文档](http://www.xuxueli.com/xxl-sso/)
+- [中文文档](https://www.xuxueli.com/xxl-sso/)
 
 #### 源码仓库地址
 
@@ -96,7 +101,7 @@ XXL-SSO 是一个分布式单点登录框架。只需要登录一次就可以访
 xxl.sso.redis.address=redis://127.0.0.1:6379
 
 // 登录态有效期窗口，默认24H，当登录态有效期窗口过半时，自动顺延一个周期
-xxl.sso.redis.expire.minite=1440
+xxl.sso.redis.expire.minute=1440
 
 ```
 
@@ -284,7 +289,7 @@ xxl.sso.redis.address=redis://xxl-sso:password@127.0.0.1:6379/0
 
 ### 4.1 架构图
 
-![输入图片说明](https://raw.githubusercontent.com/xuxueli/xxl-sso/master/doc/images/img_01.png "在这里输入图片标题")
+![输入图片说明](https://www.xuxueli.com/doc/static/xxl-sso/images/img_01.png "在这里输入图片标题")
 
 ### 4.2 功能定位
 
@@ -385,9 +390,9 @@ SSO User | 登录用户信息，与 SSO SessionId 相对应
 
 
 ### 5.3 版本 v1.1.1 Release Notes [迭代中]
-- 1、升级pom依赖版本；
-- 2、[迭代中]spring mvc 版本示例；
-- 3、[迭代中]Client跳转新增一次性Token验证；
+- 1、升级jedis、springboot等版本依赖版本；
+- 2、[迭代中]Client跳转新增一次性Token验证；
+- 3、拼写问题修复；
 
 ### TODO LIST
 - 1、认证中心与接入端交互数据加密，增强安全性；redirect_url必须和临时AccessToken配合才会生效，AccessToken有效期60s，阅后即焚模式；
@@ -397,6 +402,9 @@ SSO User | 登录用户信息，与 SSO SessionId 相对应
 - 5、token验证方式增加jwt方式支持
 - 6、Client端移除Redis依赖，改为 LocalCache/30s + RPC + Server-Redis/Broadcast 校验方式；
 - 7、安全性增强，登陆用户数据中，新增客户端信息如ip、ua等，方式session被窃取；
+- 8、集成网关支持；
+- 9、[迭代中]spring mvc 版本示例；
+
 
 ## 六、其他
 
@@ -414,4 +422,4 @@ SSO User | 登录用户信息，与 SSO SessionId 相对应
 
 ---
 ### 捐赠
-无论金额多少都足够表达您这份心意，非常感谢 ：）      [前往捐赠](http://www.xuxueli.com/page/donate.html )
+无论金额多少都足够表达您这份心意，非常感谢 ：）      [前往捐赠](https://www.xuxueli.com/page/donate.html )
